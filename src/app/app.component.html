@@ -1,20 +1,46 @@
-<div class="header">
-  <div class="container">
-    <div class="label">
-      <span class="name">Muhammad Fawky</span>
-      <span class="title" >   / Software Engineer</span>
-    </div>
-    <div class="links" >
-      <span class="icon" (click)="showMenu()">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <div class="flex-item">
+          <span class="square"></span>
+          <h3>Muhammad Fawky</h3>
+        </div>
+        <p>/</p>
+        <p>Software Engineer</p>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </div>
+      <button [class]="isToggled ? 'navbar-toggler enabled' : 'navbar-toggler'" (click)="toggleMenu()">
         <span></span>
         <span></span>
         <span></span>
-      </span>
-      <ul id="navlinks">
-        <li><a routerLink="/">About</a></li>
-        <li><a routerLink="/resume">Resume</a></li>
-        <li><a routerLink="/projects">Projects</a></li>
+      </button>
+    </nav>
+    <div id="drawer" [class]="isToggled ? 'drawer enabled' : 'drawer'"> 
+      <ul>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#">Projects</a></li>
       </ul>
     </div>
-  </div>
-</div>
+  </header>
+</body>
+
+</html>

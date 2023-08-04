@@ -7,14 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mfawky-dev';
+  isToggled = false;
 
-  showMenu(){
-    let x = document.getElementById('navlinks');
-    if(x.style.display === "none"){
-      x.style.display = "block";
-    }
-    else{
-      x.style.display = "none";
+  toggleMenu(){
+    this.isToggled = !this.isToggled;
     }
   }
-}
