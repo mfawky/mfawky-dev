@@ -54,6 +54,9 @@
     .header .title{
         display: block;
     }
+    .header .name{
+        flex-wrap: wrap;
+    }
 }
 
 @media (min-width: 768px) {
