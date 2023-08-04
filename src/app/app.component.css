@@ -115,7 +115,7 @@
     right: 0;
     padding: 20px;
     top: 100%;
-    /* display: none; */
+    display: none;
     transition: 0.5s;
     list-style: none;
 
