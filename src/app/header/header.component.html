@@ -1,0 +1,32 @@
+<header class="header">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <div class="flex-item">
+          <span class="square"></span>
+          <h3 routerLink="/">Muhammad Fawky</h3>
+        </div>
+        <p>/</p>
+        <p>Software Engineer</p>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li><a routerLink="/">About Me</a></li>
+          <li><a routerLink="/resume">Resume</a></li>
+          <li><a routerLink="/projects">Projects</a></li>
+        </ul>
+      </div>
+      <button [class]="isToggled ? 'navbar-toggler enabled' : 'navbar-toggler'" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+    <div id="drawer" [class]="isToggled ? 'drawer enabled' : 'drawer'">
+      <ul>
+        <li><a routerLink="/">About Me</a></li>
+        <li><a routerLink="/resume">Resume</a></li>
+        <li><a routerLink="/projects">Projects</a></li>
+      </ul>
+    </div>
+  
+  </header>

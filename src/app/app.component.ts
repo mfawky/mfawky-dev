@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { trigger , transition } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mfawky-dev';
-  isToggled = false;
-
-  toggleMenu(){
-    this.isToggled = !this.isToggled;
-    }
-  }
+  constructor() {}
+   
+}

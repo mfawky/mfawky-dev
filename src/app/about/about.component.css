@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.landing {
+    width: 100vw;
+    height: 100%;
+    padding: 300px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-image: linear-gradient(to right, #dfd3c7 40%, white 40%);
+
+    @media (width < 767px) {
+        padding: 200px;
+        flex-wrap: wrap;
+        background: #dfd3c7;
+    }
+
+    & .card {
+        height: 500px;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f4ece6;
+        text-align: center;
+        gap: 25px;
+        box-shadow: 10px 4px 10px 0 #ddd;
+
+        @media (width < 768px) {
+            box-shadow: 10px 4px 10px 0 #a8a8a8;
+        }
+
+        & .image {
+            padding: 45px;
+            padding-bottom: 0;
+
+            & img {
+                width: 250px;
+                clip-path: circle();
+                border-radius: 50%;
+
+            }
+        }
+
+
+        & p {
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-weight: 350;
+        }
+
+        & #line {
+            display: block;
+            width: 70px;
+            height: 3px;
+            background-color: #0050ff;
+        }
+
+        & .social-home {
+            width: 100%;
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background-color: white;
+
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        & h1 {
+            font-size: 70px;
+
+        }
+        & p{
+            font-size: large;
+        }
+
+        & .btn-home {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15px;
+
+
+            & #resume-btn-home {
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: medium;
+                border: 2px solid #0050ff;
+                width: 140px;
+                height: 33px;
+                border-radius: 20px;
+                transition: 0.3s;
+                background-color: transparent;
+                cursor: pointer;
+                
+            }
+
+            & #resume-btn-home:hover {
+                color: white;
+                background-color: #0050ff;
+
+            }
+
+            & #projects-btn-home {
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-size: medium;
+                border: 2px solid #0050ff;
+                width: 140px;
+                height: 33px;
+                border-radius: 20px;
+                transition: 0.3s;
+                background-color: transparent;
+                cursor: pointer;
+            }
+
+            & #projects-btn-home:hover {
+                color: white;
+                background-color: #0050ff;
+
+            }
+
+        }
+    }
+}
