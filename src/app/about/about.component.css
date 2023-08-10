@@ -11,14 +11,14 @@
 .landing {
     width: 100%;
     height: 100%;
-    padding: 300px;
+    padding: 400px;
     padding-top: 150px;
-    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    background-image: linear-gradient(to right, #dfd3c7 40%, white 40%);
+    background-color: #dfd3c7;
+    /* background-image: linear-gradient(to right, #dfd3c7 40%, white 40%); */
 
     @media (width < 767px) {
         padding: 200px;
@@ -35,7 +35,7 @@
         background-color: #f4ece6;
         text-align: center;
         gap: 25px;
-        box-shadow: 10px 4px 10px 0 #ddd;
+        box-shadow: 10px 4px 10px 0 #acabab;
 
         @media (width < 768px) {
             box-shadow: 10px 4px 10px 0 #a8a8a8;
@@ -69,7 +69,7 @@
 
         & .social-home {
             width: 100%;
-            padding: 25px;
+            padding: 30px;
             display: flex;
             justify-content: center;
             gap: 25px;
@@ -109,14 +109,16 @@
                 height: 33px;
                 border-radius: 20px;
                 transition: 0.3s;
-                background-color: transparent;
                 cursor: pointer;
+                color: white;
+                background-color: #0050ff;
                 
             }
 
             & #resume-btn-home:hover {
-                color: white;
-                background-color: #0050ff;
+                border: 2px solid black;
+                background-color: transparent;
+                color: black;
 
             }
 
@@ -125,7 +127,7 @@
                 font-weight: bold;
                 text-transform: uppercase;
                 font-size: medium;
-                border: 2px solid #0050ff;
+                border: 2px solid black;
                 width: 140px;
                 height: 33px;
                 border-radius: 20px;
@@ -137,6 +139,7 @@
             & #projects-btn-home:hover {
                 color: white;
                 background-color: #0050ff;
+                border: 2px solid #0050ff;
 
             }
 

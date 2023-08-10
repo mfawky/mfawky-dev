@@ -10,7 +10,7 @@
       </div>
       <div class="navbar-links">
         <ul>
-          <li><a routerLink="/">About Me</a></li>
+          <li><a routerLink="/" >About Me</a></li>
           <li><a routerLink="/resume">Resume</a></li>
           <li><a routerLink="/projects">Projects</a></li>
         </ul>
@@ -23,7 +23,7 @@
     </nav>
     <div id="drawer" [class]="isToggled ? 'drawer enabled' : 'drawer'">
       <ul>
-        <li><a routerLink="/">About Me</a></li>
+        <li><a routerLink="/" (click)="isToggled = false">About Me</a></li>
         <li><a routerLink="/resume">Resume</a></li>
         <li><a routerLink="/projects">Projects</a></li>
       </ul>
