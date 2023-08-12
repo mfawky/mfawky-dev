@@ -112,6 +112,7 @@ main {
         justify-content: center;
         align-items: center;
         gap: 30px;
+        width: 85%;
 
         & p {
             text-align: center;
@@ -165,10 +166,6 @@ main {
 
     }
 
-    & .description {
-        width: 65%;
-    }
-
     @media (width < 768px) {
         padding: 15px;
         display: flex;
@@ -176,6 +173,7 @@ main {
         justify-content: center;
         align-items: center;
         gap: 30px;
+        width: 85%;
 
         & p {
             text-align: center;
@@ -186,6 +184,11 @@ main {
             width: 100%;
         }
     }
+
+    /* @media (width > 768px) {
+        width: 85%;
+
+    } */
 }
 
 .experience-title{
