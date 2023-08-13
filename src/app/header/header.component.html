@@ -24,8 +24,8 @@
     <div id="drawer" [class]="isToggled ? 'drawer enabled' : 'drawer'">
       <ul>
         <li><a routerLink="/" (click)="isToggled = false">About Me</a></li>
-        <li><a routerLink="/resume">Resume</a></li>
-        <li><a routerLink="/projects">Projects</a></li>
+        <li><a routerLink="/resume" (click)="isToggled = false">Resume</a></li>
+        <li><a routerLink="/projects" (click)="isToggled = false">Projects</a></li>
       </ul>
     </div>
   
